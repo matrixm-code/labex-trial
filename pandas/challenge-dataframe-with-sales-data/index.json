@@ -111,13 +111,13 @@
         "assets": {
             "host01": [
                 {
-                    "file": "tests.py",
-                    "target": "/home/labex/project",
+                    "file": "dataframe_with_sales_data_tests.py",
+                    "target": "/tmp",
                     "chmod": "ugo+rx"
                 },
                 {
-                    "file": "solutions.py",
-                    "target": "/home/labex/project",
+                    "file": "dataframe_with_sales_data_script.py",
+                    "target": "/tmp",
                     "chmod": "ugo+rwx"
                 }
             ]
