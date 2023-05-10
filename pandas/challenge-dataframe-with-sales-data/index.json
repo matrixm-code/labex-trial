@@ -61,7 +61,6 @@
                 ],
                 "skills": [
                     "pandas/dataframe",
-                    "pandas/groupby",
                     "pandas/reset_index",
                     "pandas/nlargest",
                     "pandas/loc",
@@ -86,7 +85,6 @@
                 ],
                 "skills": [
                     "pandas/dataframe",
-                    "matplotlib/figure",
                     "matplotlib/bar",
                     "matplotlib/plot",
                     "matplotlib/matshow",
