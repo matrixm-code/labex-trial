@@ -19,7 +19,9 @@
                     }
                 ],
                 "skills": [
-                    "Please copy the skill ID from the official skill tree"
+                    "pandas/dataframe",
+                    "pandas/drop_duplicates",
+                    ""
                 ],
                 "solutions": [
                     "step1-solution.md"
@@ -38,7 +40,10 @@
                     }
                 ],
                 "skills": [
-                    "Please copy the skill ID from the official skill tree"
+                    "pandas/dataframe",
+                    "pandas/apply",
+                    "pandas/dt",
+                    ""
                 ],
                 "solutions": [
                     "step2-solution.md"
@@ -57,7 +62,13 @@
                     }
                 ],
                 "skills": [
-                    "Please copy the skill ID from the official skill tree"
+                    "pandas/dataframe",
+                    "pandas/groupby",
+                    "pandas/reset_index",
+                    "pandas/nlargest",
+                    "pandas/loc",
+                    "numpy/sum",
+                    "numpy/mean"
                 ],
                 "solutions": [
                     "step3-solution.md"
@@ -76,7 +87,19 @@
                     }
                 ],
                 "skills": [
-                    "Please copy the skill ID from the official skill tree"
+                    "pandas/dataframe",
+                    "matplotlib/figure",
+                    "matplotlib/bar",
+                    "matplotlib/plot",
+                    "matplotlib/matshow",
+                    "matplotlib/pie",
+                    "matplotlib/xy_label",
+                    "matplotlib/title",
+                    "matplotlib/xy_ticks",
+                    "matplotlib/legend",
+                    "matplotlib/colorbar",
+                    "matplotlib/show",
+                    ""
                 ],
                 "solutions": [
                     "step4-solution.md"

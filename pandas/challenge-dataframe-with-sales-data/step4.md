@@ -11,3 +11,27 @@
     3. Create a heatmap to visualize the correlation between features.<br>
     4. Create a pie chart to visualize the distribution of sales by season.<br>
 </p>
+
+**Example**
+<p>
+    The created visualizations should be look like pictures below:
+</p>
+
+`#0969DA` Bar Chart
+
+![example_image_Data_Visualization_Revenue](assets/step4_revenue.png)
+
+`#0969DA` Line Chart
+
+![example_image_Data_Visualization_price](assets/step4_price.png)
+
+
+`#0969DA` Heatmap
+
+![example_image_Data_Visualization_feature](assets/step4_feature.png)
+
+
+`#0969DA` Pie Chart
+
+![example_image_Data_Visualization_season](assets/step4_season.png)
+

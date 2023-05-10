@@ -11,3 +11,10 @@
     3. Create a new feature 'Price Category' based on the 'Price' column (e.g., low, medium, high).<br>
     4. Create a new feature 'Season' based on the 'Month' column.<br>
 </p>
+
+**Example**
+<p>
+    This is a result example (challengers should do this sub-challenge on the result DataFrame of sub-challenge 1.):
+</p>
+
+![example_image_Feature_Engineering](assets/step2.png)
