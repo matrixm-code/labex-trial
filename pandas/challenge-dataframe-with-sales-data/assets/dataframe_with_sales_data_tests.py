@@ -1,7 +1,11 @@
 import unittest
 import pandas as pd
 import numpy as np
-from dataframe_with_sales_data_script import clean_data, engineer_features, aggregate_data, visualize_data
+#from dataframe_with_sales_data_script import clean_data, engineer_features, aggregate_data, visualize_data
+from sub_challenge_1_Data_Cleaning import clean_data
+from sub_challenge_2_Feature_Engineering import engineer_features
+from sub_challenge_3_Data_Aggregation import aggregate_data
+from sub_challenge_4_Data_Visualization import visualize_data
 
 
 class TestAdvancedPandasChallenge(unittest.TestCase):
