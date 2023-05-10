@@ -129,26 +129,6 @@
                     "file": "test_sub_challenge_4_data_visualization.py",
                     "target": "/tmp",
                     "chmod": "ugo+rx"
-                },
-                {
-                    "file": "sub_challenge_1_data_cleaning.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "sub_challenge_2_feature_engineering.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "sub_challenge_3_data_aggregation.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "sub_challenge_4_data_visualization.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
                 }
             ]
         }
