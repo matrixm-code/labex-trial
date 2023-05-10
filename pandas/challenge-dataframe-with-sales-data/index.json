@@ -111,8 +111,14 @@
         "assets": {
             "host01": [
                 {
-                    "file": "test.py",
-                    "target": "~/tmp"
+                    "file": "tests.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rx"
+                },
+                {
+                    "file": "solutions.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
                 }
             ]
         }
