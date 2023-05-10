@@ -112,7 +112,7 @@
             "host01": [
                 {
                     "file": "test.py",
-                    "target": "/tmp"
+                    "target": "~/tmp"
                 }
             ]
         }
