@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 dataframe_with_sales_data_tests.py
+cd /tmp && python3 test_sub_challenge_3_Data_Aggregation.py
