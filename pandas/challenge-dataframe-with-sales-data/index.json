@@ -1,0 +1,105 @@
+{
+    "type": "challenge",
+    "title": "Dataframe with Sales Data",
+    "description": "In this challenge, challengers must create a Pandas DataFrame and fulfill functions like data deletion, category creation, and data aggregation in this data frame, which must then be printed out at last.",
+    "difficulty": "Intermediate",
+    "time": 20,
+    "details": {
+        "steps": [
+            {
+                "title": "Data Cleaning",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "check if data is deleted successfully",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "Please copy the skill ID from the official skill tree"
+                ],
+                "solutions": [
+                    "step1-solution.md"
+                ]
+            },
+            {
+                "title": "Feature Engineering",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "check if new categories are created",
+                        "file": "verify2.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "Please copy the skill ID from the official skill tree"
+                ],
+                "solutions": [
+                    "step2-solution.md"
+                ]
+            },
+            {
+                "title": "Data Aggregation",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "check if data aggregated correctly",
+                        "file": "verify3.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "Please copy the skill ID from the official skill tree"
+                ],
+                "solutions": [
+                    "step3-solution.md"
+                ]
+            },
+            {
+                "title": "Data Visualization",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Print the bar chart, the line chart, the heatmap, and the pie chart of data out",
+                        "file": "verify4.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "Please copy the skill ID from the official skill tree"
+                ],
+                "solutions": [
+                    "step4-solution.md"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "vnc-ubuntu:2204"
+    }
+}
