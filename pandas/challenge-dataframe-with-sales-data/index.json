@@ -113,12 +113,7 @@
                 {
                     "file": "dataframe_with_sales_data_script.py",
                     "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "dataframe_with_sales_data_tests.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
+                    "chmod":"ugo+rwx"
                 }
             ]
         }
