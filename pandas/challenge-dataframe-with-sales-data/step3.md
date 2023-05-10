@@ -12,7 +12,7 @@
     4. Identify the season with the highest sales.<br>
 </p>
 
-**Example**
+**Example:**
 <p>
     This is a result example:
 </p>

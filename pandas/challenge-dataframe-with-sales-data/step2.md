@@ -12,7 +12,7 @@
     4. Create a new feature 'Season' based on the 'Month' column.<br>
 </p>
 
-**Example**
+**Example:**
 <p>
     This is a result example (challengers should do this sub-challenge on the result DataFrame of sub-challenge 1.):
 </p>

@@ -12,26 +12,26 @@
     4. Create a pie chart to visualize the distribution of sales by season.<br>
 </p>
 
-**Example**
+**Example:**
 <p>
     The created visualizations should be look like pictures below:
 </p>
 
-`#0969DA` Bar Chart
+`Bar Chart:`
 
 ![example_image_Data_Visualization_Revenue](assets/step4_revenue.png)
 
-`#0969DA` Line Chart
+`Line Chart:`
 
 ![example_image_Data_Visualization_price](assets/step4_price.png)
 
 
-`#0969DA` Heatmap
+`Heatmap:`
 
 ![example_image_Data_Visualization_feature](assets/step4_feature.png)
 
 
-`#0969DA` Pie Chart
+`Pie Chart:`
 
 ![example_image_Data_Visualization_season](assets/step4_season.png)
 

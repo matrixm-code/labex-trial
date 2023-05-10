@@ -14,7 +14,7 @@
     5. Normalize the data: apply scaling techniques to standardize the range of the data.<br>
 </p>
 
-**Example**
+**Example:**
 <p>
     This is an example of a DataFrame after cleaning the data:
 </p>
