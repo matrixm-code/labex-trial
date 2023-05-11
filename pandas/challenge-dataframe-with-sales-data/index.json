@@ -131,22 +131,22 @@
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "test_sub_challenge_1_data_cleaning.py",
+                    "file": "test_sub_challenge_1_Data_Cleaning.py",
                     "target": "/tmp",
                     "chmod": "ugo+rx"
                 },
                 {
-                    "file": "test_sub_challenge_2_feature_engineering.py",
+                    "file": "test_sub_challenge_2_Feature_Engineering.py",
                     "target": "/tmp",
                     "chmod": "ugo+rx"
                 },
                 {
-                    "file": "test_sub_challenge_3_data_aggregation.py",
+                    "file": "test_sub_challenge_3_Data_Aggregation.py",
                     "target": "/tmp",
                     "chmod": "ugo+rx"
                 },
                 {
-                    "file": "test_sub_challenge_4_data_visualization.py",
+                    "file": "test_sub_challenge_4_Data_Visualization.py",
                     "target": "/tmp",
                     "chmod": "ugo+rx"
                 }
