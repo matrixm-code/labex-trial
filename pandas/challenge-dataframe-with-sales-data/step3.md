@@ -11,3 +11,5 @@
     3. Find the top 10 products with the highest revenue.<br>
     4. Identify the season with the highest sales.<br>
 </p>
+
+*returned values shoud be sequenced as total_revenue_per_product, avg_price_per_category, top_10_products, and highest_sales_season*
