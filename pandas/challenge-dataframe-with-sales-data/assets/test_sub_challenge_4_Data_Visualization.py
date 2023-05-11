@@ -34,8 +34,8 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
     def test_visualize_data(self):
         cleaned_df = clean_data(self.df)
         engineered_df = engineer_features(cleaned_df)
-        total_revenue_per_product, avg_price_per_category, top_10_products, highest_sales_season = engineered_df.groupby('Season')['Revenue'].sum().reset_index()
-        visualize_data(engineered_df, total_revenue_per_product, avg_price_per_category, top_10_products, highest_sales_season)
+        total_revenue_per_product, avg_price_per_category, top_10_products, highest_sales_season = aggregate_data(engineered_df)
+        visualize_data(engineered_df, total_revenue_per_product, avg_price_per_category, top_10_products, engineered_df.groupby('Season')['Revenue'].sum().reset_index())
 
 if __name__ == '__main__':
     unittest.main()

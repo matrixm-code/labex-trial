@@ -7,8 +7,8 @@ from sub_challenge_1_Data_Cleaning import data
 df = pd.DataFrame(data)
 
 # Sub-challenge 4: Data Visualization
-def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, avg_price_per_category: pd.DataFrame,
-                   season_sales: pd.DataFrame) -> None:
+def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, avg_price_per_category: pd.DataFrame, top_10_products: pd.DataFrame, 
+                    season_sales: pd.DataFrame) -> None:
     """
     Create visualizations to help better understand the dataset and communicate findings.
     
