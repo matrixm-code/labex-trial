@@ -133,22 +133,22 @@
                 {
                     "file": "test_sub_challenge_1_data_cleaning.py",
                     "target": "/tmp",
-                    "chmod": "ogu+rx"
+                    "chmod": "ugo+rx"
                 },
                 {
                     "file": "test_sub_challenge_2_feature_engineering.py",
                     "target": "/tmp",
-                    "chmod": "ogu+rx"
+                    "chmod": "ugo+rx"
                 },
                 {
                     "file": "test_sub_challenge_3_data_aggregation.py",
                     "target": "/tmp",
-                    "chmod": "ogu+rx"
+                    "chmod": "ugo+rx"
                 },
                 {
                     "file": "test_sub_challenge_4_data_visualization.py",
                     "target": "/tmp",
-                    "chmod": "ogu+rx"
+                    "chmod": "ugo+rx"
                 }
             ]
         }
