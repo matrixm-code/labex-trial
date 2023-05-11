@@ -11,10 +11,3 @@
     3. Find the top 10 products with the highest revenue.<br>
     4. Identify the season with the highest sales.<br>
 </p>
-
-**Example:**
-<p>
-    This is a result example:
-</p>
-
-![example_image_Data_Aggregation](assets/step3.png)
