@@ -6,10 +6,8 @@
 </p>
 
 **TODO:**
-<p>
-    1. Load the dataset into a Pandas DataFrame.<br>
-    2. Handle missing values: identify and deal with missing values in the dataset.<br>
-    3. Handle duplicate records: identify and remove any duplicate records in the dataset.<br>
-    4. Handle outliers: identify and deal with any outliers in the dataset.<br>
-    5. Normalize the data: apply scaling techniques to standardize the range of the data.<br>
-</p>
+    1.  Load the dataset into a Pandas DataFrame.
+    2.  Handle missing values: identify and deal with missing values in the dataset.
+    3.  Handle duplicate records: identify and remove any duplicate records in the dataset.
+    4.  Handle outliers: identify and deal with any outliers in the dataset.
+    5.  Normalize the data: apply scaling techniques to standardize the range of the data.
