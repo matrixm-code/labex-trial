@@ -6,7 +6,7 @@
 
 **TODO:**
     1. Calculate the total revenue for each product.
-    2. Calculate the average price per category.
+    2. Calculate the average price per category.<br>
     3. Find the top 10 products with the highest revenue.
     4. Identify the season with the highest sales.
 
