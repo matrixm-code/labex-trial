@@ -110,7 +110,26 @@
         },
         "assets": {
             "host01": [
-                
+                {
+                    "file": "sub_challenge_1_Data_Cleaning.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "sub_challenge_2_Feature_Engineering.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "sub_challenge_3_Data_Aggregation.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "sub_challenge_4_Data_Visualization.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
                 {
                     "file": "test_sub_challenge_1_Data_Cleaning.py",
                     "target": "/tmp",
