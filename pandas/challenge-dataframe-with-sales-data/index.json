@@ -113,7 +113,7 @@
         "assets": {
             "host01": [
                 {
-                    "file": "sub_challenge_1_Data_Cleaning.py",
+                    "file": "data_cleaning.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                 },
@@ -133,7 +133,7 @@
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "test_sub_challenge_1_Data_Cleaning.py",
+                    "file": "test_data_cleaning.py",
                     "target": "/tmp",
                     "chmod": "ugo+rwx"
                 },
