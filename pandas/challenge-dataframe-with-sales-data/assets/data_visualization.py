@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
-from sub_challenge_1_Data_Cleaning import data
+from data_cleaning import data
 
 df = pd.DataFrame(data)
 

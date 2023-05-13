@@ -5,10 +5,9 @@ sys.path.append("/home/labex/project")
 import unittest
 import pandas as pd
 import numpy as np
-from sub_challenge_1_Data_Cleaning import clean_data
-from sub_challenge_2_Feature_Engineering import engineer_features
-from sub_challenge_3_Data_Aggregation import aggregate_data
-from sub_challenge_4_Data_Visualization import visualize_data
+from data_cleaning import clean_data
+from feature_engineering import engineer_features
+from data_aggregation import aggregate_data
 
 class TestAdvancedPandasChallenge(unittest.TestCase):
 
@@ -30,12 +29,15 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
 
         self.df = pd.DataFrame(self.data)
 
-    # No assertion for visualization function, as it generates plots
-    def test_visualize_data(self):
+    def test_aggregate_data(self):
         cleaned_df = clean_data(self.df)
         engineered_df = engineer_features(cleaned_df)
-        total_revenue_per_product, avg_price_per_category, top_10_products, highest_sales_season = aggregate_data(engineered_df)
-        visualize_data(engineered_df, total_revenue_per_product, avg_price_per_category, top_10_products, engineered_df.groupby('Season')['Revenue'].sum().reset_index())
+        results = aggregate_data(engineered_df)
+        self.assertEqual(len(results), 4)
+        self.assertTrue(isinstance(results[0], pd.DataFrame))
+        self.assertTrue(isinstance(results[1], pd.DataFrame))
+        self.assertTrue(isinstance(results[2], pd.DataFrame))
+        self.assertTrue(isinstance(results[3], str))
 
 if __name__ == '__main__':
     unittest.main()

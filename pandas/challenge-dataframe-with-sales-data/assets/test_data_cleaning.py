@@ -5,7 +5,7 @@ sys.path.append("/home/labex/project")
 import unittest
 import pandas as pd
 import numpy as np
-from sub_challenge_1_Data_Cleaning import clean_data
+from data_cleaning import clean_data
 
 class TestAdvancedPandasChallenge(unittest.TestCase):
 

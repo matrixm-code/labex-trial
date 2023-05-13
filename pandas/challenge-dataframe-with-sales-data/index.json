@@ -118,17 +118,17 @@
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "sub_challenge_2_Feature_Engineering.py",
+                    "file": "feature_engineering.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "sub_challenge_3_Data_Aggregation.py",
+                    "file": "data_aggregation.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "sub_challenge_4_Data_Visualization.py",
+                    "file": "data_visualization.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                 },
@@ -138,17 +138,17 @@
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "test_sub_challenge_2_Feature_Engineering.py",
+                    "file": "test_feature_engineering.py",
                     "target": "/tmp",
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "test_sub_challenge_3_Data_Aggregation.py",
+                    "file": "test_data_aggregation.py",
                     "target": "/tmp",
                     "chmod": "ugo+rwx"
                 },
                 {
-                    "file": "test_sub_challenge_4_Data_Visualization.py",
+                    "file": "test_data_visualization.py",
                     "target": "/tmp",
                     "chmod": "ugo+rwx"
                 }
