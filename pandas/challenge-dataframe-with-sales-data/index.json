@@ -20,6 +20,8 @@
                 ],
                 "skills": [
                     "pandas/dataframe",
+                    "pandas/dropna",
+                    "pandas/reset_index",
                     "pandas/drop_duplicates"
                 ],
                 "solutions": [
