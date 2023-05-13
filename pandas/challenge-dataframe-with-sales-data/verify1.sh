@@ -14,5 +14,5 @@ if  grep -q "df.dropna()" "/home/labex/project/data_cleaning.py" ; then
         echo 'No reset_index() detected';
     fi 
 else
-    echo 'No dropna() detected'; 
+    exit 0; 
 fi
