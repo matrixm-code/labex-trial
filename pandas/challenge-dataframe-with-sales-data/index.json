@@ -25,7 +25,7 @@
                     "pandas/drop_duplicates"
                 ],
                 "solutions": [
-                    "step1-solution.md"
+                    "clean_data.py"
                 ]
             },
             {
@@ -46,7 +46,7 @@
                     "pandas/dt"
                 ],
                 "solutions": [
-                    "step2-solution.md"
+                    "future_engineering.py"
                 ]
             },
             {
@@ -70,7 +70,7 @@
                     "numpy/mean"
                 ],
                 "solutions": [
-                    "step3-solution.md"
+                    "data_aggregation.py"
                 ]
             },
             {
@@ -99,7 +99,7 @@
                     "matplotlib/show"
                 ],
                 "solutions": [
-                    "step4-solution.md"
+                    "visualize_data.py"
                 ]
             }
         ],
