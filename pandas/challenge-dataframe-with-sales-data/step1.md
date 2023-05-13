@@ -4,7 +4,8 @@ In this sub-challenge, your goal is to clean and preprocess the raw sales data. 
 
 **TODO:**
 1.  Drop rows with missing values using the Pandas `pandas.dropna` function and Reset index using the Pandas `pandas.reset_index`.
-2.  Drop any duplicate rows using `pandas.drop_duplicates`.
+2.  Convert the 'Date' column to datetime using `pandas.to_datetime`.
+3.  Drop any duplicate rows using `pandas.drop_duplicates`.
 
 ## Example
 The original data before processing looks like this:
