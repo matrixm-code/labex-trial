@@ -7,7 +7,7 @@ if  grep -q ".dt.year" "/home/labex/project/feature_engineering.py" ; then
             exit 1;
         fi
     else
-        exit 0;
+        exit 1;
     fi
 else
     exit 1;
