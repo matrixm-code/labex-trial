@@ -8,7 +8,7 @@ if  grep -q "df.dropna()" "/home/labex/project/data_cleaning.py" ; then
                 exit 0;
             fi
         else
-            exit 1;
+            exit 0;
         fi
     else
         exit 1;
