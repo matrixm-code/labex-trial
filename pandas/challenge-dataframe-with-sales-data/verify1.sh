@@ -5,7 +5,7 @@ if  grep -q "df.dropna()" "/home/labex/project/data_cleaning.py" ; then
             if grep -q "df.drop_duplicates(" "/home/labex/project/data_cleaning.py"; then
                 cd /tmp && python3 test_data_cleaning.py
             else
-                exit 0;
+                exit 1;
             fi
         else
             exit 0;
