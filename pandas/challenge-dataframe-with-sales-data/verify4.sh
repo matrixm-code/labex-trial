@@ -1,23 +1,23 @@
 #!/bin/zsh
 if  grep -q "plt.bar(" "/home/labex/project/data_visualization.py" ; then
     if  grep -q "plt.plot" "/home/labex/project/data_visualization.py" && grep -q "plt.legend(" "/home/labex/project/data_visualization.py" ; then
-        # if grep -q "plt.matshowr" "/home/labex/project/data_visualization.py" && grep -q "plt.colorba" "/home/labex/project/data_visualization.py"; then
-        #     if grep -q "plt.pie" "/home/labex/project/data_visualization.py"; then
-        #         if grep -q "plt.xlabel" "/home/labex/project/data_visualization.py" && grep -q "plt.ylabel" "/home/labex/project/data_visualization.py" && grep -q "plt.title" "/home/labex/project/data_visualization.py"; then
-        #             if grep -q "plt.show()" "/home/labex/project/data_visualization.py"; then
-        #                 cd /tmp && python3 test_data_visualization.py
-        #             else
-        #                 exit 1;
-        #             fi
-        #         else
-        #             exit 1;
-        #         fi
-        #     else
-        #         exit 1;
-        #     fi
-        # else
-        #     exit 1;
-        # fi
+        if grep -q "plt.matshowr" "/home/labex/project/data_visualization.py" && grep -q "plt.colorba" "/home/labex/project/data_visualization.py"; then
+            # if grep -q "plt.pie" "/home/labex/project/data_visualization.py"; then
+            #     if grep -q "plt.xlabel" "/home/labex/project/data_visualization.py" && grep -q "plt.ylabel" "/home/labex/project/data_visualization.py" && grep -q "plt.title" "/home/labex/project/data_visualization.py"; then
+            #         if grep -q "plt.show()" "/home/labex/project/data_visualization.py"; then
+            #             cd /tmp && python3 test_data_visualization.py
+            #         else
+            #             exit 1;
+            #         fi
+            #     else
+            #         exit 1;
+            #     fi
+            # else
+            #     exit 1;
+            # fi
+        else
+            exit 1;
+        fi
     else
         exit 1;
     fi
