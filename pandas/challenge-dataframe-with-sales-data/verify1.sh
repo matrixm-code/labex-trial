@@ -5,13 +5,13 @@ if  grep -q "df.dropna()" "/home/labex/project/data_cleaning.py" ; then
             if grep -q "df.drop_duplicates(" "/home/labex/project/data_cleaning.py"; then
                 cd /tmp && python3 test_data_cleaning.py
             else
-                echo 'No drop_duplicates() detected';
+                exit 1;
             fi
         else
-            echo 'No to_datetime() detected';
+            exit 1;
         fi
     else
-        echo 'No reset_index() detected';
+        exit 1;
     fi 
 else
     exit 1;
