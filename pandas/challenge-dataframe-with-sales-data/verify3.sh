@@ -12,7 +12,7 @@ if  grep -q ".sum()" "/home/labex/project/data_aggregation.py" ; then
         fi
     else
         exit 1;
-    fi
+    fi 
 else
     exit 1;
 fi

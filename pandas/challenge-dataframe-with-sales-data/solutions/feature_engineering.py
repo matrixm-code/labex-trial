@@ -11,7 +11,6 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     df['Day'] = df['Date'].dt.day
     
     # Create 'Price Category'
-
     def price_category(price: float) -> str:
         if price <= 60:
             return 'Low'
