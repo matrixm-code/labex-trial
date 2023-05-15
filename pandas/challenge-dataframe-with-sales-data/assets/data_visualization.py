@@ -27,5 +27,4 @@ def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, av
 
 if __name__ == '__main__':
     season_sales = df.groupby('Season')['Revenue'].sum().reset_index()
-    data_visual = visualize_data(df, total_revenue_per_product, avg_price_per_category, top_10_products, season_sales)
-    print(data_visual)
+    visualize_data(df, total_revenue_per_product, avg_price_per_category, top_10_products, season_sales)
