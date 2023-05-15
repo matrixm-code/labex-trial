@@ -9,11 +9,10 @@ In this sub-challenge, you will create new features from the existing data to en
 
 ## example
 
-The original DataFrame before processing looks like this (the result of Data Cleaning):
-
-![feature_engineering_origin_image](assets/clean_data_result.png)
-
-
+Challengers can run the feature_engineering.py file to verify the correctness of the code:
+```
+python3 feature_engineering.py
+```
 The DataFrame processing result is as follows:
 
 ![feature_engineering_result_image](assets/feature_engineering_result.png)

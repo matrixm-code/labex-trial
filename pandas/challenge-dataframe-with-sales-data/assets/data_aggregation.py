@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
 
-df=pd.read_csv('df.csv')
+df=pd.read_csv('ef.csv')
 
 # Sub-challenge 3: Data Aggregation
 def aggregate_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, str]:
@@ -18,3 +18,7 @@ def aggregate_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Dat
     # Note: Do not change the existing code.
 
     return
+
+if __name__ == '__main__':
+    aggregate_df = aggregate_data(df)
+    print(aggregate_df)

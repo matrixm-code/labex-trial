@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from typing import Tuple
 
 df = pd.read_csv('dc.csv')
+df['Date'] = pd.to_datetime(df['Date'])
 
 # Sub-challenge 2: Feature Engineering
 def engineer_features(df: pd.DataFrame) -> pd.DataFrame:

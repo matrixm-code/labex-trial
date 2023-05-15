@@ -10,6 +10,10 @@ In this sub-challenge, you will create visualizations to help you better underst
 6. Demonstrate each chart using `matplotlib.show`.
 
 **Example:**
+Challengers can run the data_visualization.py file by clicking 'Run Cell' at the top of the code to verify the correctness of the code:
+
+![example_image_Data_Visualization_RunCell](assets/data_visualization_check.png)
+
 The created visualizations should be look like pictures below:
 
 `Bar Chart:`
