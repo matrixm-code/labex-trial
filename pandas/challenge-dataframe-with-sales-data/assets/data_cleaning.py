@@ -33,5 +33,8 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     # TODO: implement this function here.
     # Note: Do not change the existing code.
 
+    df.to_csv('dc.csv')
+    return
+
 if __name__ == '__main__':
     print(clean_data(df))

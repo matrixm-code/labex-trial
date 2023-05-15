@@ -2,9 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
-from data_cleaning import data
 
-df = pd.DataFrame(data)
+df=pd.read_csv('df.csv')
 
 # Sub-challenge 3: Data Aggregation
 def aggregate_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, str]:
@@ -17,3 +16,5 @@ def aggregate_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Dat
 
     # TODO: implement this function here.
     # Note: Do not change the existing code.
+
+    return

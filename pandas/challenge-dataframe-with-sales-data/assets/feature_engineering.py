@@ -2,9 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
-from data_cleaning import data
 
-df = pd.DataFrame(data)
+df = pd.read_csv('dc.csv')
 
 # Sub-challenge 2: Feature Engineering
 def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
@@ -17,4 +16,11 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     
     # TODO: implement this function here.
     # Note: Do not change the existing code.
+
+    df.to_csv('ef.csv')
+    return
+
+if __name__ == '__main__':
+    engineered_df = engineer_features(df)
+    print(engineered_df)
 

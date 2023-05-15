@@ -2,9 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
-from data_cleaning import data
 
-df = pd.DataFrame(data)
+df=pd.read_csv('df.csv')
 
 # Sub-challenge 4: Data Visualization
 def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, avg_price_per_category: pd.DataFrame, top_10_products: pd.DataFrame, 
@@ -21,3 +20,5 @@ def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, av
     
     # TODO: implement this function here.
     # Note: Do not change the existing code.
+
+    return
