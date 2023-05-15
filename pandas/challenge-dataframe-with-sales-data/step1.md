@@ -8,9 +8,10 @@ In this sub-challenge, your goal is to clean and preprocess the raw sales data. 
 3.  Drop any duplicate rows using `pandas.drop_duplicates`.
 
 ## Example
-The original data before processing looks like this:
-
-![clean_data_origin_image](assets/clean_data_origin.png)
+Challengers can run the data_cleaning.py file to verify the correctness of the code:
+```
+python3 data_cleaning.py
+```
 
 The data processing result looks is as follows:
 
