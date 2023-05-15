@@ -10,7 +10,8 @@ In this sub-challenge, you will aggregate the data to answer specific questions 
 
 *returned values shoud be sequenced as total_revenue_per_product, avg_price_per_category, top_10_products, and highest_sales_season*
 
-## example
+## Example
+
 Challengers can run the data_aggregation.py file to verify the correctness of the code:
 ```
 python3 data_aggregation.py

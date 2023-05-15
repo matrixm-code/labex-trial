@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from typing import Tuple
 from data_aggregation import aggregate_data
 
-df=pd.read_csv('df.csv')
-total_revenue_per_product, avg_price_per_category, top_10_products, sales_season = aggregate_data(df)
+df=pd.read_csv('ef.csv')
+total_revenue_per_product, avg_price_per_category, top_10_products, season_sales = aggregate_data(df)
 
 # Sub-challenge 4: Data Visualization
 def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, avg_price_per_category: pd.DataFrame, top_10_products: pd.DataFrame, 
@@ -24,9 +24,8 @@ def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, av
     # TODO: implement this function here.
     # Note: Do not change the existing code.
 
-    return
 
 if __name__ == '__main__':
     season_sales = df.groupby('Season')['Revenue'].sum().reset_index()
-    data_visual = visualize_data(total_revenue_per_product, avg_price_per_category, top_10_products, sales_season)
+    data_visual = visualize_data(df, total_revenue_per_product, avg_price_per_category, top_10_products, season_sales)
     print(data_visual)
