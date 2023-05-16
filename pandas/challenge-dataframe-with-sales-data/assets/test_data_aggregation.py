@@ -43,18 +43,24 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
         cleaned_df = clean_data(self.df)
         engineered_df = engineer_features(cleaned_df)
         results = aggregate_data(engineered_df)
-
+        # check total_revenue_per_product
         expected_revenue_data = {'Product': ['Product A', 'Product B', 'Product C', 'Product E', 'Product F', 'Product G', 'Product H', 'Product J',
                                     'Product K', 'Product N', 'Product O', 'Product P', 'Product Q'],
                         'Revenue': [3000.0, 1050.0, 2700.0, 960.0, 720.0, 1200.0, 700.0, 1400.0, 1200.0, 2960.0, 910.0, 1750.0, 900.0]}
         expected_revenue_df = pd.DataFrame(expected_revenue_data)
         pd.testing.assert_frame_equal(results[0].reset_index(drop=True), expected_revenue_df.reset_index(drop=True), check_dtype=False)
-
+        # check avg_price_per_category
         expected_category_data = {'Category': ['Electronics', 'Fashion', 'Home'],
                         'Price': [275, 75, 80]}
         expected_category_df = pd.DataFrame(expected_category_data)
         pd.testing.assert_frame_equal(results[1].reset_index(drop=True), expected_category_df.reset_index(drop=True), check_dtype=False)
-
+        # check top_10_products
+        expected_products_data = {'Product': ['Product A', 'Product N', 'Product C', 'Product P', 'Product J', 'Product G', 'Product K', 'Product B', 'Product E', 'Product O'],
+                        'Revenue': [3000.0, 2960.0, 2700.0, 1750.0, 1400.0, 1200.0, 1200.0, 1050.0, 960.0, 910.0]}
+        expected_products_df = pd.DataFrame(expected_products_data)
+        pd.testing.assert_frame_equal(results[2].reset_index(drop=True), expected_products_df.reset_index(drop=True), check_dtype=False)
+        # check highest_sales_season
+        self.assertTrue(results[3]=='Summer')
 
 if __name__ == '__main__':
     unittest.main()
