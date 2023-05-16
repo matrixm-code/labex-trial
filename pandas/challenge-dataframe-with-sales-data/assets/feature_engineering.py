@@ -15,12 +15,12 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     # TODO: implement this function here.
     # Note: Do not change the existing code.
 
-    df.to_csv('ef.csv')
     return
 
 if __name__ == '__main__':
     df = pd.read_csv('dc.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     engineered_df = engineer_features(df)
+    engineered_df.to_csv('ef.csv')
     print(engineered_df)
 

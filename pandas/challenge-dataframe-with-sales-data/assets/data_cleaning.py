@@ -35,6 +35,6 @@ if __name__ == '__main__':
             'Items Sold': [10, 7, 20, 15, 12, 8, 6, 14, 9, 4, 10, 5, 5, 16, 13, 7, 9, np.nan, 8, 11]}
 
     df = pd.DataFrame(data)
-    
-    df.to_csv('dc.csv')
-    print(clean_data(df))
+    clean_df = clean_data(df)
+    clean_df.to_csv('dc.csv')
+    print(clean_df)

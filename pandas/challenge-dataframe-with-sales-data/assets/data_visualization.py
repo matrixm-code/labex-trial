@@ -24,6 +24,8 @@ def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, av
 
 if __name__ == '__main__':
     df=pd.read_csv('ef.csv')
+    df=df.loc[:,~df.columns.str.contains("^Unnamed")]
+    df['Date'] = pd.to_datetime(df['Date'])
     total_revenue_per_product, avg_price_per_category, top_10_products, season_sales = aggregate_data(df)
     season_sales = df.groupby('Season')['Revenue'].sum().reset_index()
     visualize_data(df, total_revenue_per_product, avg_price_per_category, top_10_products, season_sales)

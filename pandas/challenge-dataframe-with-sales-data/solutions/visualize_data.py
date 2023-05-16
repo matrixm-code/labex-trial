@@ -31,7 +31,7 @@ def visualize_data(df: pd.DataFrame, total_revenue_per_product: pd.DataFrame, av
 
     # Feature Correlations
     plt.figure(figsize=(10, 6))
-    correlations = df.corr()
+    correlations = df.corr(numeric_only=True)
     cax = plt.matshow(correlations, vmin=-1, vmax=1, cmap='coolwarm')
     plt.colorbar(cax)
     plt.xticks(range(len(correlations.columns)), correlations.columns, rotation=90)
