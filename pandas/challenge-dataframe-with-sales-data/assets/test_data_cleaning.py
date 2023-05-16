@@ -1,5 +1,4 @@
 import sys
-import beavis
 
 sys.path.append("/home/labex/project")
 
