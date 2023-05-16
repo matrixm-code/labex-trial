@@ -52,16 +52,5 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
         cleaned_df = pd.DataFrame(cleaned_df)
         pd.testing.assert_frame_equal(cleaned_df.reset_index(drop=True), expected_df.reset_index(drop=True), check_dtype=False)
 
-        # expected_df.equals(cleaned_df)
-        # pd.testing.assert_frame_equal(expected_data["Date"], cleaned_df["Date"])
-        # pd.testing.assert_frame_equal(expected_data["Product"], cleaned_df["Product"])
-
 if __name__ == '__main__':
-    
-    # cleaned_df = clean_data(self.df)
-    # self.assertTrue(pd.testing.assert_series_equal(expected_data["Date"], cleaned_df["Date"]))
-    # self.assertTrue(pd.testing.assert_series_equal(expected_data["Product"], cleaned_df["Product"]))
-    # self.assertTrue(pd.testing.assert_series_equal(expected_data["Category"], cleaned_df["Category"]))
-    # self.assertTrue(pd.testing.assert_series_equal(expected_data["Price"], cleaned_df["Price"]))
-    # self.assertTrue(pd.testing.assert_series_equal(expected_data["Items Sold"], cleaned_df["Items Sold"]))
     unittest.main()

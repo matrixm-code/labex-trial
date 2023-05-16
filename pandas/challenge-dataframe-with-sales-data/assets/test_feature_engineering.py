@@ -33,5 +33,10 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
         engineered_df = engineer_features(cleaned_df)
         self.assertTrue(isinstance(engineered_df, pd.DataFrame))
 
+    def test_new_features(self):
+        cleaned_df = clean_data(self.df)
+        engineered_df = engineer_features(cleaned_df)
+        self.assertTrue(set(engineered_df.columns)== {'Date', 'Product', 'Category', 'Price', 'Item Sold', 'Revenue', 'Year', 'Month', 'Day', 'Price Category', 'Season'})
+
 if __name__ == '__main__':
     unittest.main()
