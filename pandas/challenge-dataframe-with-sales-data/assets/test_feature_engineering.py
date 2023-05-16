@@ -38,7 +38,7 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
         engineered_df = engineer_features(cleaned_df)
         engineered_df=engineered_df.loc[:,~engineered_df.columns.str.contains("^Unamed")]
         print(engineered_df.columns)
-        self.assertTrue(set(engineered_df.columns)== {'Date', 'Product', 'Category', 'Price', 'Item Sold', 'Revenue', 'Year', 'Month', 'Day', 'Price Category', 'Season'})
+        self.assertTrue(set(engineered_df.columns)== {'Date', 'Product', 'Category', 'Price', 'Items Sold', 'Revenue', 'Year', 'Month', 'Day', 'Price Category', 'Season'})
 
 if __name__ == '__main__':
     unittest.main()
