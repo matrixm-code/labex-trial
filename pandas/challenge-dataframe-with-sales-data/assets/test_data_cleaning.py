@@ -50,7 +50,7 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
         expected_df['Date']=pd.to_datetime(expected_df['Date'])
         cleaned_df = clean_data(self.df)
         cleaned_df = pd.DataFrame(cleaned_df)
-        pd.testing.assert_frame_equal(cleaned_data.reset_index(drop=True), expected_df.reset_index(drop=True), check_dtype=False)
+        pd.testing.assert_frame_equal(cleaned_df.reset_index(drop=True), expected_df.reset_index(drop=True), check_dtype=False)
 
         # expected_df.equals(cleaned_df)
         # pd.testing.assert_frame_equal(expected_data["Date"], cleaned_df["Date"])
