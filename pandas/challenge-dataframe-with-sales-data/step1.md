@@ -20,7 +20,7 @@ Challengers can run the data_cleaning.py file to verify the correctness of the c
 python3 data_cleaning.py
 
 #output:
-Date    Product     Category  Price  Items Sold
+         Date    Product     Category  Price  Items Sold
 0  2021-03-01  Product A  Electronics    300        10.0
 1  2021-03-02  Product B  Electronics    150         7.0
 2  2021-03-03  Product C         Home     60        20.0
@@ -38,7 +38,3 @@ Date    Product     Category  Price  Items Sold
 15 2021-10-16  Product P  Electronics    250         7.0
 16 2021-11-17  Product Q      Fashion    100         9.0
 ```
-
-The data processing result looks is as follows:
-
-![clean_data_origin_image](assets/clean_data_result.png)

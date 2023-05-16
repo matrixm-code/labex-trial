@@ -21,6 +21,7 @@ if __name__ == '__main__':
     df = pd.read_csv('dc.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     engineered_df = engineer_features(df)
+    engineered_df=engineered_df.loc[:,~engineered_df.columns.str.contains("^Unnamed")]
     engineered_df.to_csv('ef.csv')
     print(engineered_df)
 
