@@ -46,8 +46,14 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
                                 'Electronics', 'Fashion'],
                     'Price': [300, 150, 60, 40, 80, 90, 200, 50, 100, 350, 120, 400, 60, 70, 250, 100, 110, 180, 90],
                     'Items Sold': [10, 7, 20, 15, 12, 8, 6, 14, 9, 4, 10, 5, 16, 13, 7, 9]}
+        # cleaned_df = clean_data(self.df)
+        # pd.testing.assert_frame_equal(cleaned_df, expected_data)
         cleaned_df = clean_data(self.df)
-        pd.testing.assert_frame_equal(cleaned_df, expected_data)
+        self.assertTrue(pd.testing.assert_series_equal(expected_data["Date"], cleaned_df["Date"]))
+        self.assertTrue(pd.testing.assert_series_equal(expected_data["Product"], cleaned_df["Product"]))
+        self.assertTrue(pd.testing.assert_series_equal(expected_data["Category"], cleaned_df["Category"]))
+        self.assertTrue(pd.testing.assert_series_equal(expected_data["Price"], cleaned_df["Price"]))
+        self.assertTrue(pd.testing.assert_series_equal(expected_data["Items Sold"], cleaned_df["Items Sold"]))
 
 if __name__ == '__main__':
     
