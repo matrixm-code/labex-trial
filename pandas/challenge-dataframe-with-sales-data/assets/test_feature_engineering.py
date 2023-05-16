@@ -36,7 +36,7 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
     def test_new_features(self):
         cleaned_df = clean_data(self.df)
         engineered_df = engineer_features(cleaned_df)
-        engineered_df=engineered_df.loc[:,~df.columns.str.contains("^Unamed")]
+        engineered_df=engineered_df.loc[:,~engineered_df.columns.str.contains("^Unamed")]
         self.assertTrue(set(engineered_df.columns)== {'Date', 'Product', 'Category', 'Price', 'Item Sold', 'Revenue', 'Year', 'Month', 'Day', 'Price Category', 'Season'})
 
 if __name__ == '__main__':
