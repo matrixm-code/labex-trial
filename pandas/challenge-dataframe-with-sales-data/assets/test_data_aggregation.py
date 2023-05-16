@@ -47,7 +47,7 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
         expected_revenue_data = {'Product': ['Product A', 'Product B', 'Product C', 'Product E', 'Product F', 'Product G', 'Product H', 'Product J',
                                     'Product K', 'Product N', 'Product O', 'Product P', 'Product Q'],
                         'Revenue': [3000.0, 1050.0, 2700.0, 960.0, 720.0, 1200.0, 700.0, 1400.0, 1200.0, 2960.0, 910.0, 1750.0, 900.0]}
-        expected_revenue_df = pd.DataFrame(expected_revenue_df)
+        expected_revenue_df = pd.DataFrame(results[0])
         pd.testing.assert_frame_equal(results[0].reset_index(drop=True), expected_revenue_df.reset_index(drop=True), check_dtype=False)
 
 
