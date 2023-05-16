@@ -3,8 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
 
-df=pd.read_csv('ef.csv')
-
 # Sub-challenge 3: Data Aggregation
 def aggregate_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, str]:
     """
@@ -20,5 +18,9 @@ def aggregate_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Dat
     return
 
 if __name__ == '__main__':
-    aggregate_df = aggregate_data(df)
-    print(aggregate_df)
+    df=pd.read_csv('ef.csv')
+    total_revenue_per_product, avg_price_per_category, top_10_products, highest_sales_season = aggregate_data(df)
+    print(total_revenue_per_product)
+    print(avg_price_per_category)
+    print(top_10_products)
+    print(highest_sales_season)

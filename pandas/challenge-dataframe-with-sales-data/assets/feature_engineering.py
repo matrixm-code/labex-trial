@@ -3,9 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
 
-df = pd.read_csv('dc.csv')
-df['Date'] = pd.to_datetime(df['Date'])
-
 # Sub-challenge 2: Feature Engineering
 def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -22,6 +19,8 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     return
 
 if __name__ == '__main__':
+    df = pd.read_csv('dc.csv')
+    df['Date'] = pd.to_datetime(df['Date'])
     engineered_df = engineer_features(df)
     print(engineered_df)
 
