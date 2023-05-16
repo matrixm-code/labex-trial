@@ -48,12 +48,12 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
                     'Items Sold': [10, 7, 20, 15, 12, 8, 6, 14, 9, 4, 10, 5, 16, 13, 7, 9]}
         cleaned_df = clean_data(self.df)
         # pd.testing.assert_frame_equal(cleaned_df, cleaned_df, check_dtype=False)
-
-        pd.testing.assert_frame_equal(expected_data["Date"], cleaned_df["Date"])
-        pd.testing.assert_frame_equal(expected_data["Product"], cleaned_df["Product"])
-        self.assertTrue(pd.testing.assert_series_equal(expected_data["Category"], cleaned_df["Category"]))
-        self.assertTrue(pd.testing.assert_series_equal(expected_data["Price"], cleaned_df["Price"]))
-        self.assertTrue(pd.testing.assert_series_equal(expected_data["Items Sold"], cleaned_df["Items Sold"]))
+        expected_data.equals(cleaned_df)
+        # pd.testing.assert_frame_equal(expected_data["Date"], cleaned_df["Date"])
+        # pd.testing.assert_frame_equal(expected_data["Product"], cleaned_df["Product"])
+        # self.assertTrue(pd.testing.assert_series_equal(expected_data["Category"], cleaned_df["Category"]))
+        # self.assertTrue(pd.testing.assert_series_equal(expected_data["Price"], cleaned_df["Price"]))
+        # self.assertTrue(pd.testing.assert_series_equal(expected_data["Items Sold"], cleaned_df["Items Sold"]))
 
 if __name__ == '__main__':
     
