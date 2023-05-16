@@ -50,7 +50,7 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
         # pd.testing.assert_frame_equal(cleaned_df, cleaned_df, check_dtype=False)
 
         pd.testing.assert_frame_equal(expected_data["Date"], cleaned_df["Date"])
-        pd.testing.assert_frame_equal(expected_data["Product"], cleaned_df["Product"]))
+        pd.testing.assert_frame_equal(expected_data["Product"], cleaned_df["Product"])
         self.assertTrue(pd.testing.assert_series_equal(expected_data["Category"], cleaned_df["Category"]))
         self.assertTrue(pd.testing.assert_series_equal(expected_data["Price"], cleaned_df["Price"]))
         self.assertTrue(pd.testing.assert_series_equal(expected_data["Items Sold"], cleaned_df["Items Sold"]))
