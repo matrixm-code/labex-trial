@@ -44,7 +44,7 @@ class TestAdvancedPandasChallenge(unittest.TestCase):
                                 'Home', 'Electronics', 'Fashion', 'Home', 'Electronics',
                                 'Fashion', 'Electronics', 'Fashion', 'Home',
                                 'Electronics', 'Fashion'],
-                    'Price': [300, 150, 60, 40, 80, 90, 200, 50, 100, 350, 120, 400, 60, 70, 250, 100, 110, 180, 90],
+                    'Price': [300, 150, 60, 40, 80, 90, 200, 50, 100, 350, 120, 400, 60, 70, 250, 100],
                     'Items Sold': [10, 7, 20, 15, 12, 8, 6, 14, 9, 4, 10, 5, 16, 13, 7, 9]}
         cleaned_df = clean_data(self.df)
         pd.testing.assert_frame_equal(cleaned_df, expected_data)
