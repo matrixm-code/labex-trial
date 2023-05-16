@@ -51,7 +51,3 @@ output:
  10  Product O    910.0,
  'Summer')
 ```
-
-The data processing result is as follows:
-
-![feature_engineering_result_image](assets/data_aggregation_result.png)
