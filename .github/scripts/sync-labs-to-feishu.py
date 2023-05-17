@@ -141,10 +141,17 @@ class Sync:
         path_slug = file_path.removeprefix("./").removesuffix("/index.json")
         if len(direction) > 0:
             lab_direction = direction[0].replace("./", "").title()
-            if lab_direction == "Numpy":
-                lab_direction = "NumPy"
-            elif lab_direction == "Opencv":
-                lab_direction = "OpenCV"
+            directions_map = {
+                "Numpy": "NumPy",
+                "Opencv": "OpenCV",
+                "Css": "CSS",
+                "Html": "HTML",
+                "Mongodb": "MongoDB",
+                "Cpp": "C++",
+                "Mysql": "MySQL",
+            }
+            if lab_direction in directions_map.keys():
+                lab_direction = directions_map[lab_direction]
         else:
             lab_direction = None
         lab_title = index.get("title", None)
