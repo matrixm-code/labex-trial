@@ -14,7 +14,7 @@ In this sub-challenge, you will create new features from the existing data to en
 
 Challengers can run the feature_engineering.py file to verify the correctness of the code:
 
-```bash
+```zsh
 python3 data_cleaning.py
 python3 feature_engineering.py
 
