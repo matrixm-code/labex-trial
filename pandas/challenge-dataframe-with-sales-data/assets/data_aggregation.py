@@ -18,8 +18,8 @@ def aggregate_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Dat
     return
 
 if __name__ == '__main__':
-    aggregate_df=pd.read_csv('ef.csv')
-    total_revenue_per_product, avg_price_per_category, top_10_products, highest_sales_season = aggregate_data(aggregate_df)
+    engineered_df=pd.read_csv('ef.csv')
+    total_revenue_per_product, avg_price_per_category, top_10_products, highest_sales_season = aggregate_data(engineered_df)
     print(total_revenue_per_product)
     print(avg_price_per_category)
     print(top_10_products)

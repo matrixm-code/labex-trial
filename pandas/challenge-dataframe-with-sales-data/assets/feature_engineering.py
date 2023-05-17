@@ -18,9 +18,9 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     return
 
 if __name__ == '__main__':
-    df = pd.read_csv('dc.csv')
-    df['Date'] = pd.to_datetime(df['Date'])
-    engineered_df = engineer_features(df)
+    clean_df = pd.read_csv('dc.csv')
+    clean_df['Date'] = pd.to_datetime(clean_df['Date'])
+    engineered_df = engineer_features(clean_df)
     engineered_df=engineered_df.loc[:,~engineered_df.columns.str.contains("^Unnamed")]
     engineered_df.to_csv('ef.csv')
     print(engineered_df)
