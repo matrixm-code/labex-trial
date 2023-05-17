@@ -15,7 +15,6 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     # TODO: implement this function here.
     # Note: Do not change the existing code.
 
-    return
 
 if __name__ == '__main__':   
     # Load sample data
@@ -38,3 +37,4 @@ if __name__ == '__main__':
     clean_df = clean_data(df)
     clean_df.to_csv('dc.csv')
     print(clean_df)
+

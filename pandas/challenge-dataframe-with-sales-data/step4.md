@@ -16,22 +16,22 @@ In this sub-challenge, you will create visualizations to help you better underst
 
 Challengers can run the data_visualization.py file by clicking 'Run Cell' at the top of the code to verify the correctness of the code:
 
-![example_image_Data_Visualization_RunCell](assets/data_visualization_check.png)
+![example_image_Data_Visualization_RunCell](assets/lab-Data_Visualization-4-0.png)
 
 The created visualizations should be look like pictures below:
 
 `Bar Chart:`
 
-![example_image_Data_Visualization_Revenue](assets/data_visualization_bar.png)
+![example_image_Data_Visualization_Revenue](assets/lab-Data_Visualization-4-1.png)
 
 `Line Chart:`
 
-![example_image_Data_Visualization_price](assets/data_visualization_line.png)
+![example_image_Data_Visualization_price](assets/lab-Data_Visualization-4-2.png)
 
 `Heatmap:`
 
-![example_image_Data_Visualization_feature](assets/data_visualization_heatmap.png)
+![example_image_Data_Visualization_feature](assets/lab-Data_Visualization-4-3.png)
 
 `Pie Chart:`
 
-![example_image_Data_Visualization_season](assets/data_visualization_pie.png)
+![example_image_Data_Visualization_season](assets/lab-Data_Visualization-4-4.png)

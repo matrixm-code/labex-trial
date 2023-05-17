@@ -1,7 +1,7 @@
 {
     "type": "challenge",
     "title": "Dataframe with Sales Data",
-    "description": "In this challenge, challengers must create a Pandas DataFrame and fulfill functions like data deletion, category creation, and data aggregation in this data frame, which must then be printed out at last.",
+    "description": "In this challenge, challengers must create a Pandas DataFrame and fulfill some basic functions on DataFrame.",
     "difficulty": "Intermediate",
     "time": 20,
     "details": {
