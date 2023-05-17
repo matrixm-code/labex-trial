@@ -1,10 +1,10 @@
 #!/bin/zsh
-if  grep -q "plt.bar(" "/home/labex/project/data_visualization.py" ; then
-    if  grep -q "plt.plot" "/home/labex/project/data_visualization.py"; then
-        if grep -q "plt.matshow" "/home/labex/project/data_visualization.py"; then
-            if grep -q "plt.pie" "/home/labex/project/data_visualization.py"; then
-                if grep -q "plt.xlabel" "/home/labex/project/data_visualization.py" && grep -q "plt.ylabel" "/home/labex/project/data_visualization.py" && grep -q "plt.title" "/home/labex/project/data_visualization.py"; then
-                    if grep -q "plt.show()" "/home/labex/project/data_visualization.py"; then
+if  grep -q ".bar(" "/home/labex/project/data_visualization.py" ; then
+    if  grep -q ".plot" "/home/labex/project/data_visualization.py"; then
+        if grep -q ".matshow" "/home/labex/project/data_visualization.py"; then
+            if grep -q ".pie" "/home/labex/project/data_visualization.py"; then
+                if grep -q ".xlabel" "/home/labex/project/data_visualization.py" && grep -q ".ylabel" "/home/labex/project/data_visualization.py" && grep -q ".title" "/home/labex/project/data_visualization.py"; then
+                    if grep -q ".show()" "/home/labex/project/data_visualization.py"; then
                         
                     else
                         exit 1;
