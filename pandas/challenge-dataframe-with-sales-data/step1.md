@@ -12,7 +12,7 @@ In this sub-challenge, your goal is to clean and preprocess the raw sales data. 
 
 Challengers can run the data_cleaning.py file to verify the correctness of the code:
 
-```
+```bash
 python3 data_cleaning.py
 
 # output:

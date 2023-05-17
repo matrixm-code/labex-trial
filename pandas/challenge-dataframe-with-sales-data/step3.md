@@ -14,7 +14,7 @@ In this sub-challenge, you will aggregate the data to answer specific questions 
 
 Challengers can run the data_aggregation.py file to verify the correctness of the code:
 
-```
+```bash
 python3 data_cleaning.py
 python3 feature_engineering.py
 python3 data_aggregation.py
