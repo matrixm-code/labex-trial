@@ -18,7 +18,7 @@ Challengers can run the `data_visualization.py` file by clicking 'Run Cell' at t
 
 ![example_image_Data_Visualization_RunCell](assets/lab-Data_Visualization-4-0.png)
 
-The created visualizations should be look like pictures below:
+The created charts should be look like the pictures below：
 
 `Bar Chart:`
 
