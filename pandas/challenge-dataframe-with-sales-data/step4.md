@@ -16,8 +16,7 @@ In this sub-challenge, you will create visualizations to help you better underst
 
 Challengers can run the `data_visualization.py` file by clicking 'Run Cell' at the top of the code to verify the correctness of the code:
 
-![example_image_Data_Visualization_RunCell](assets/lab-Data_Visualization-4-0
-.png)
+![example_image_Data_Visualization_RunCell](assets/lab-Data_Visualization-4-0.png)
 
 The created visualizations should be look like pictures below:
 
