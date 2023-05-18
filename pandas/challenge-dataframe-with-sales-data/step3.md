@@ -4,7 +4,7 @@ In this sub-challenge, you will aggregate the data to answer specific questions 
 
 **TODO:**
 
-1.  Create the `aggregate_data` function in the `aggregate_data.py`.
+1.  Create the `aggregate_data` function in the `data_aggregation.py`.
 2.  Calculate the total revenue for each product.
 3.  Calculate the average price per category.
 4.  Find the top 10 products with the highest revenue.

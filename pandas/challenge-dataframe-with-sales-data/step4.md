@@ -4,7 +4,7 @@ In this sub-challenge, you will create visualizations to help you better underst
 
 **TODO:**
 
-1.  Create the `visualize_data` function in the `visualize_data.py`.
+1.  Create the `visualize_data` function in the `data_visualization.py`.
 2.  Create a `bar chart` to visualize the total revenue per product.
 3.  Create a `line chart` to visualize the average price per category over time.
 4.  Create a `heatmap` to visualize the correlation between features.

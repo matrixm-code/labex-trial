@@ -4,7 +4,7 @@ In this sub-challenge, you will create new features from the existing data to en
 
 **TODO:**
 
-1.  Create the `engineer_features` function in the `engineer_features.py`.
+1.  Create the `engineer_features` function in the `features_engineering.py`.
 2.  Create a new feature `Revenue` by multiplying `Price` and `Items Sold`.
 3.  Use the the Pandas `pandas.dt` to extract `Year`, `Month`, and `Day` columns from the `Date` column.
 4.  Create a new feature `Price Category` based on the `Price` column (e.g., low, medium, high) by writing `price_category` function.
