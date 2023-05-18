@@ -5,12 +5,12 @@ In this sub-challenge, your goal is to clean and preprocess the raw sales data. 
 **TODO:**
 
 1.  Create the `clean_data` function in the `data_cleaning.py`.
-2.  Convert the 'Date' column to datetime using `pandas.to_datetime`.
+2.  Convert the `Date` column to datetime using `pandas.to_datetime`.
 3.  Clean the duplicate row and rows with missing values in the `DataFrame` and return the DataFrame.
 
 ## Example
 
-Challengers can run the data_cleaning.py file to verify the correctness of the code:
+Challengers can run the `data_cleaning.py` file to verify the correctness of the code:
 
 ```zsh
 python3 data_cleaning.py

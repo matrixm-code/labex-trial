@@ -6,13 +6,13 @@ In this sub-challenge, you will create new features from the existing data to en
 
 1.  Create the `engineer_features` function in the `engineer_features.py`.
 2.  Create a new feature `Revenue` by multiplying `Price` and `Items Sold`.
-3.  Use the the Pandas `pandas.dt` to extract 'Year', 'Month', and 'Day' columns from the `Date` column.
+3.  Use the the Pandas `pandas.dt` to extract `Year`, `Month`, and `Day` columns from the `Date` column.
 4.  Create a new feature `Price Category` based on the `Price` column (e.g., low, medium, high) by writing `price_category` function.
 5.  Create a new feature `Season` based on the `Month` column by writing `season` function.
 
 ## Example
 
-Challengers can run the feature_engineering.py file to verify the correctness of the code:
+Challengers can run the `feature_engineering.py` file to verify the correctness of the code:
 
 ```zsh
 python3 data_cleaning.py
