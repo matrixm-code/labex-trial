@@ -1,0 +1,100 @@
+{
+  "type": "challenge",
+  "title": "Fresh Vegetables",
+  "description": "A new batch of vegetables has arrived in the kitchen and they are all piled up.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Fresh Vegetables",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the Chrome driver",
+            "file": "verify0.sh",
+            "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether port 8080 exists",
+            "file": "verify1-1.sh",
+            "hint": "Please click Go Live.",
+            "timeout": 2,
+            "showstderr": false
+          },
+          {
+            "name": "Check Layout similarity",
+            "file": "verify1-2.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          }
+        ],
+        "skills": ["css/align_self", "css/justify_content"],
+        "solutions": ["style.css"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_fresh_vegetables.js",
+          "target": "/tmp"
+        },
+        {
+          "file": "box1Target.png",
+          "target": "/tmp"
+        },
+        {
+          "file": "box2Target.png",
+          "target": "/tmp"
+        },
+        {
+          "file": "box3Target.png",
+          "target": "/tmp"
+        },
+        {
+          "file": "index.html",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "chili.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "carrot.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "cabbage.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": ".puppeteerrc.cjs",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "lqid": 2439
+}

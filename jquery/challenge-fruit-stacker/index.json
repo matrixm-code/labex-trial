@@ -1,0 +1,109 @@
+{
+  "type": "challenge",
+  "title": "Fruit Stacker",
+  "description": "This is a puzzle game, but one of the more popular ones lately is a three-dimensional stacking game, so Blue wanted to make one for himself and called it Fruit Stacker.",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Fruit Stacker",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the Chrome driver",
+            "file": "verify0.sh",
+            "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether port 8080 exists",
+            "file": "verify1-1.sh",
+            "hint": "Please click Go Live.",
+            "timeout": 2,
+            "showstderr": false
+          },
+          {
+            "name": "Detection of eliminable conditions",
+            "file": "verify1-2.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          },
+          {
+            "name": "Detection of non-eliminable conditions",
+            "file": "verify1-3.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          }
+        ],
+        "skills": ["js/filter", "jquery/add_class", "jquery/remove"],
+        "solutions": ["index.html"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_fruit_stacker1.js",
+          "target": "/tmp"
+        },
+        {
+          "file": "test_fruit_stacker2.js",
+          "target": "/tmp"
+        },
+        {
+          "file": "index.html",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "jquery.min.js",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "apple.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "avocado.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "grapes.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "pineapple.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": ".puppeteerrc.cjs",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "lqid": 2275
+}
