@@ -1,0 +1,48 @@
+/* TODO: Add your CSS code here */
+#box:hover div:nth-child(6) {
+    transform: rotate(-10deg);
+}
+
+#box:hover div:nth-child(5) {
+    transform: rotate(-20deg);
+}
+
+#box:hover div:nth-child(4) {
+    transform: rotate(-30deg);
+}
+
+#box:hover div:nth-child(3) {
+    transform: rotate(-40deg);
+}
+
+#box:hover div:nth-child(2) {
+    transform: rotate(-50deg);
+}
+
+#box:hover div:nth-child(1) {
+    transform: rotate(-60deg);
+}
+
+#box:hover div:nth-child(7) {
+    transform: rotate(10deg);
+}
+
+#box:hover div:nth-child(8) {
+    transform: rotate(20deg);
+}
+
+#box:hover div:nth-child(9) {
+    transform: rotate(30deg);
+}
+
+#box:hover div:nth-child(10) {
+    transform: rotate(40deg);
+}
+
+#box:hover div:nth-child(11) {
+    transform: rotate(50deg);
+}
+
+#box:hover div:nth-child(12) {
+    transform: rotate(60deg);
+}

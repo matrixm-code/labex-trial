@@ -137,7 +137,7 @@ class Sync:
         """
         with open(file_path, "r") as f:
             index = json.load(f)
-        direction = re.compile(r"\.\/[a-z]+").findall(file_path)
+        direction = re.compile(r"\.\/[a-z1-9]+").findall(file_path)
         path_slug = file_path.removeprefix("./").removesuffix("/index.json")
         if len(direction) > 0:
             lab_direction = direction[0].replace("./", "").title()
@@ -149,6 +149,9 @@ class Sync:
                 "Mongodb": "MongoDB",
                 "Cpp": "C++",
                 "Mysql": "MySQL",
+                "Jquery": "jQuery",
+                "Javascript": "JavaScript",
+                "Es6": "ES6",
             }
             if lab_direction in directions_map.keys():
                 lab_direction = directions_map[lab_direction]

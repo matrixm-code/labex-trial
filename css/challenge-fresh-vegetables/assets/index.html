@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Vegetables</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      .item {
+        display: block;
+        width: 66px;
+        height: 66px;
+      }
+
+      .item img {
+        width: 100%;
+        height: auto;
+      }
+
+      [class$="box"] {
+        width: 204px;
+        height: 204px;
+        margin: 20px;
+        background-image: linear-gradient(
+          rgb(252, 213, 136) 33.3%,
+          #fff493 0,
+          #fdf45d 66.6%,
+          #f8da47 0
+        );
+        background-size: 6px 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="box1">
+        <span class="item">
+          <img src="cabbage.svg" alt="" />
+        </span>
+      </div>
+      <div class="box" id="box2">
+        <span class="item">
+          <img src="chili.svg" alt="" />
+        </span>
+        <span class="item">
+          <img src="chili.svg" alt="" />
+        </span>
+      </div>
+      <div class="box" id="box3">
+        <span class="item">
+          <img src="carrot.svg" alt="" />
+        </span>
+        <span class="item">
+          <img src="carrot.svg" alt="" />
+        </span>
+        <span class="item">
+          <img src="carrot.svg" alt="" />
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
