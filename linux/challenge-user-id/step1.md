@@ -22,11 +22,10 @@ Count the number of users with user IDs between 500 and 10000 on the system.
 ## Sample Execution / Output:
 
 ```bash
-labex:project/ $ bash userId.sh 
+labex:project/ $ bash userId.sh
 
 [OUTPUT] UID AND USERNAEM [OUTPUT]
 5000 :labex
 999 :mongodb
 [OUTPUT]Total count of User-id Between 500 to 10000 is "2" [OUTPUT]
 ```
-
