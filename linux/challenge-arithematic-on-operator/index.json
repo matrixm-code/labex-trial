@@ -1,0 +1,45 @@
+{
+  "type": "challenge",
+  "title": "Arithematic on Operator",
+  "description": "Write a script to perform arithmetic operation on digits of a given number depending upon the operator.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Arithematic on Operator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Checking the feasibility of solutions offered by users",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo"],
+        "solutions": ["arithematicOnOperator.sh"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "arithematicOnOperator.sh",
+          "target": "~/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
