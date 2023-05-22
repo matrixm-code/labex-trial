@@ -1,0 +1,45 @@
+{
+  "type": "challenge",
+  "title": "Fibonacci",
+  "description": "Read n and generate Fibonacci numbers less than or equal to n.",
+  "difficulty": "Intermediate",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Fibonacci",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Checking the feasibility of solutions offered by users",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo"],
+        "solutions": ["fibonacci.sh"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "fibonacci.sh",
+          "target": "~/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
