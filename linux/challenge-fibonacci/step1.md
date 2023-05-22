@@ -24,8 +24,7 @@ labex:project/ $ bash fibonacci.sh
 [INPUT]Enter the value of N[INPUT]
 15
 [OUTPUT]Fibonacci Series of Given Number 15 is [OUTPUT]
-0       1       1       2       3       5       8       13
-
+0 1 1 2 3 5 8 13
 
 largest of given fibonacci series is:13
 ```
