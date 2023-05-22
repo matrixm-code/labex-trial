@@ -1,84 +1,78 @@
 {
-    "type": "challenge",
-    "title": "Gradient Background Generator",
-    "description": "You need help updating the two colour values in the colour picker to the CSS variables via JS functions to enable the gradient colour preview.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Gradient Background Generator",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the Chrome driver",
-                        "file": "verify0.sh",
-                        "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
-                        "timeout": 0,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check whether port 8080 exists",
-                        "file": "verify1-1.sh",
-                        "hint": "Please click Go Live.",
-                        "timeout": 2,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check function",
-                        "file": "verify1-2.sh",
-                        "hint": "Failed challenge.",
-                        "timeout": 30,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "js/onchange",
-                    "js/query_selector_all",
-                    "js/query_selector"
-                ],
-                "solutions": [
-                    "index.js"
-                ]
-            }
+  "type": "challenge",
+  "title": "Gradient Background Generator",
+  "description": "You need help updating the two colour values in the colour picker to the CSS variables via JS functions to enable the gradient colour preview.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Gradient Background Generator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the Chrome driver",
+            "file": "verify0.sh",
+            "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether port 8080 exists",
+            "file": "verify1-1.sh",
+            "hint": "Please click Go Live.",
+            "timeout": 2,
+            "showstderr": false
+          },
+          {
+            "name": "Check function",
+            "file": "verify1-2.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": ["js/onchange", "js/query_selector_all", "js/query_selector"],
+        "solutions": ["index.js"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_gradient_background.js",
+          "target": "/tmp"
         },
-        "finish": {
-            "text": "finish.md"
+        {
+          "file": "index.html",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_gradient_background.js",
-                    "target": "/tmp"
-                },
-                {
-                    "file": "index.html",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "styles.css",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "index.js",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": ".puppeteerrc.cjs",
-                    "target": "/tmp"
-                }
-            ]
+        {
+          "file": "styles.css",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "index.js",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": ".puppeteerrc.cjs",
+          "target": "/tmp"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "lqid": 2274
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "lqid": 2274
 }
