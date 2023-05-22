@@ -37,8 +37,8 @@ labex:project/ $ bash pattern1.sh
 5
 [OUTPUT]Expected Pattern is Shown Below[OUTPUT]
 1
-1       2
-1       2       3
-1       2       3       4
-1       2       3       4       5
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
 ```
