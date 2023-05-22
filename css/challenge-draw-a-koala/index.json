@@ -1,83 +1,81 @@
 {
-    "type": "challenge",
-    "title": "Draw a Koala",
-    "description": "This challenge will use both to draw a koala.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Draw a Koala",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the Chrome driver",
-                        "file": "verify0.sh",
-                        "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
-                        "timeout": 0,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check whether port 8080 exists",
-                        "file": "verify1-1.sh",
-                        "hint": "Please click Go Live.",
-                        "timeout": 2,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check Layout similarity",
-                        "file": "verify1-2.sh",
-                        "hint": "Failed challenge.",
-                        "timeout": 30,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "css/grid_area",
-                    "css/grid_template_columns",
-                    "css/grid_template_rows"
-                ],
-                "solutions": [
-                    "styles.css"
-                ]
-            }
+  "type": "challenge",
+  "title": "Draw a Koala",
+  "description": "This challenge will use both to draw a koala.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Draw a Koala",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the Chrome driver",
+            "file": "verify0.sh",
+            "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether port 8080 exists",
+            "file": "verify1-1.sh",
+            "hint": "Please click Go Live.",
+            "timeout": 2,
+            "showstderr": false
+          },
+          {
+            "name": "Check Layout similarity",
+            "file": "verify1-2.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": [
+          "css/grid_area",
+          "css/grid_template_columns",
+          "css/grid_template_rows"
+        ],
+        "solutions": ["styles.css"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_draw_a_koala.js",
+          "target": "/tmp"
         },
-        "finish": {
-            "text": "finish.md"
+        {
+          "file": "example.png",
+          "target": "/tmp"
         },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_draw_a_koala.js",
-                    "target": "/tmp"
-                },
-                {
-                    "file": "example.png",
-                    "target": "/tmp"
-                },
-                {
-                    "file": "index.html",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "styles.css",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": ".puppeteerrc.cjs",
-                    "target": "/tmp"
-                }
-            ]
+        {
+          "file": "index.html",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "styles.css",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": ".puppeteerrc.cjs",
+          "target": "/tmp"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "lqid": 2341
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "lqid": 2341
 }
