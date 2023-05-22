@@ -23,8 +23,8 @@ Command output translation.
 labex:project/ $ bash stringConv.sh input_file.txt
 
 [INPUT] Please Select an option [INPUT]
-        1.TO_UPPER_CASE
-        2.to_lower_case
+1.TO_UPPER_CASE
+2.to_lower_case
 1
 [OUTPUT] content of Input File AFTER OPERATION [OUTPUT]
 THIS PROGRAM TAKES AN INPUT_FILE AS AN INPUT
@@ -36,8 +36,8 @@ AND LOWER_CASE
 labex:project/ $ bash stringConv.sh input_file.txt
 
 [INPUT] Please Select an option [INPUT]
-        1.TO_UPPER_CASE
-        2.to_lower_case
+1.TO_UPPER_CASE
+2.to_lower_case
 2
 [OUTPUT] content of Input File AFTER OPERATION [OUTPUT]
 this program takes an input_file as an input
