@@ -1,87 +1,85 @@
 {
-    "type": "challenge",
-    "title": "Flex Dice Layout",
-    "description": "The new Flex layout in CSS3 has now become the preferred way of front-end page layout, and this test will use Flex to implement the classic layout effect.",
-    "difficulty": "Beginner",
-    "time": 10,
-    "details": {
-        "steps": [
-            {
-                "title": "Flex Dice Layout",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the Chrome driver",
-                        "file": "verify0.sh",
-                        "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
-                        "timeout": 0,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check flex",
-                        "file": "verify1-1.sh",
-                        "hint": "Failed challenge.",
-                        "timeout": 30,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether port 8080 exists",
-                        "file": "verify1-2.sh",
-                        "hint": "Please click Go Live.",
-                        "timeout": 2,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check flex layout",
-                        "file": "verify1-3.sh",
-                        "hint": "Failed challenge.",
-                        "timeout": 30,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "css/justify_content",
-                    "css/align_self",
-                    "css/flex_basis",
-                    "css/align_items",
-                    "css/padding"
-                ],
-                "solutions": [
-                    "index.html"
-                ]
-            }
+  "type": "challenge",
+  "title": "Flex Dice Layout",
+  "description": "The new Flex layout in CSS3 has now become the preferred way of front-end page layout, and this test will use Flex to implement the classic layout effect.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Flex Dice Layout",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the Chrome driver",
+            "file": "verify0.sh",
+            "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check flex",
+            "file": "verify1-1.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          },
+          {
+            "name": "Check whether port 8080 exists",
+            "file": "verify1-2.sh",
+            "hint": "Please click Go Live.",
+            "timeout": 2,
+            "showstderr": false
+          },
+          {
+            "name": "Check flex layout",
+            "file": "verify1-3.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": [
+          "css/justify_content",
+          "css/align_self",
+          "css/flex_basis",
+          "css/align_items",
+          "css/padding"
+        ],
+        "solutions": ["index.html"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_flex_dice_layout.js",
+          "target": "/tmp"
         },
-        "finish": {
-            "text": "finish.md"
+        {
+          "file": "157483target.png",
+          "target": "/tmp"
         },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_flex_dice_layout.js",
-                    "target": "/tmp"
-                },
-                {
-                    "file": "157483target.png",
-                    "target": "/tmp"
-                },
-                {
-                    "file": "index.html",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": ".puppeteerrc.cjs",
-                    "target": "/tmp"
-                }
-            ]
+        {
+          "file": "index.html",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": ".puppeteerrc.cjs",
+          "target": "/tmp"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "lqid": 1523
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "lqid": 1523
 }
