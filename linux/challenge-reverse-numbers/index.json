@@ -1,0 +1,45 @@
+{
+  "type": "challenge",
+  "title": "Reverse Numbers",
+  "description": "Write a script to print a given number in reverse order.",
+  "difficulty": "Intermediate",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Reverse Numbers",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Checking the feasibility of solutions offered by users",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo"],
+        "solutions": ["reverse.sh"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reverse.sh",
+          "target": "~/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

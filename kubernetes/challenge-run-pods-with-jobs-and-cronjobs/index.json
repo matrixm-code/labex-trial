@@ -1,0 +1,109 @@
+{
+  "type": "challenge",
+  "title": "Run Pods with Jobs and Cronjobs",
+  "description": "In this challenge, we will learn how to run pods with jobs and cronjobs in Kubernetes.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Run a Pod with a Job",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if Job called hello-job exists",
+            "file": "verify1-1.sh",
+            "hint": "Please create a Job called hello-job",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of the job",
+            "file": "verify1-2.sh",
+            "hint": "Please use 'kubectl get' command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "View the logs of the pod",
+            "file": "verify1-3.sh",
+            "hint": "Please use 'kubectl logs' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/logs"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Run a Job with Multiple Pods",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if Job called download-job exists",
+            "file": "verify2-1.sh",
+            "hint": "Please create a Job called download-job",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "View the logs of the pod",
+            "file": "verify2-3.sh",
+            "hint": "Please use 'kubectl logs' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/logs"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Run a CronJob",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if CronJob called hello-cronjob exists",
+            "file": "verify3-1.sh",
+            "hint": "Please create a CronJob called hello-cronjob",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of the cronjob",
+            "file": "verify3-2.sh",
+            "hint": "Please use 'kubectl get' command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "View the logs of the cronjob's pod",
+            "file": "verify3-3.sh",
+            "hint": "Please use 'kubectl logs' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/logs"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "challenge",
+  "title": "Mount",
+  "description": "Write a script to determine whether a given file system or mount point is mounted.",
+  "difficulty": "Intermediate",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Mount",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Checking the feasibility of solutions offered by users",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/df"],
+        "solutions": ["mount.sh"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "mount.sh",
+          "target": "~/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
