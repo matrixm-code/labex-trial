@@ -32,12 +32,12 @@ Read `n` and generate a pattern given below.
 
 ```bash
 labex:project/ $ bash pattern2.sh
-[INPUT]Enter  the value of N[INPUT]
+[INPUT]Enter the value of N[INPUT]
 5
 [OUTPUT]The Patter is Executed as shown below[OUTPUT]
 1
-2       3
-4       5       6
-7       8       9       10
-11      12      13      14      15
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
 ```
