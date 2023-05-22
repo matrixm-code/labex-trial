@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Print Lines",
+  "description": "Write script to print contents of file from given line number to next given number of lines.",
+  "difficulty": "Intermediate",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Print Lines",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Checking the feasibility of solutions offered by users",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo", "linux/head"],
+        "solutions": ["printLines.sh"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "printLines.sh",
+          "target": "~/project",
+          "chmod": "777"
+        },
+        {
+          "file": "inputFile.txt",
+          "target": "/home/labex/project"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
