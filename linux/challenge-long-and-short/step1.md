@@ -24,7 +24,6 @@ Display the longest and shortest user-names on the system.
 ```bash
 labex:project/ $ bash longAndShort.sh
 
-
 [OUTPUT] Largest and Shortest UserName [OUTPUT]
 Largest Username is systemd-timesync
 Smallest Username is lp
