@@ -1,0 +1,1 @@
+# Right Angle Triangle Pattern
