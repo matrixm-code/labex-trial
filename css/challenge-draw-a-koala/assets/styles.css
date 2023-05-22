@@ -1,0 +1,96 @@
+html,
+body {
+  background: #f8d8ab;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ears {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 240px;
+  width: 550px;
+}
+
+.ear {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #738394;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f6b9bf;
+}
+.blush {
+  width: 40px;
+  height: 30px;
+  background: #f6b9bf;
+  border-radius: 50%;
+}
+/* TODO: Please add code to the following selectors according to the comments */
+.face {
+  z-index: 1;
+  width: 430px;
+  height: 380px;
+  background: #a0abb6;
+  border-radius: 50%;
+  align-items: center;
+
+  /* TODO: Create a grid layout 6 columns
+  The front and back columns are divided into two equal parts (fr can be used to represent one).
+  The middle 4 columns are all 25px wide 4 horizontal rows - with 50px top and bottom,
+  two equal parts in the middle
+  */
+}
+
+.eye {
+  width: 30px;
+  height: 30px;
+  background: #090b0e;
+  border-radius: 50%;
+  /* TODO: Centered in position */
+}
+
+.eye.left {
+  /* TODO: Select grid-area as shown in the example */
+}
+
+.eye.right {
+  /* TODO: Select grid-area as shown in the example */
+}
+
+.nose {
+  background: #3b464f;
+  border-radius: 50% 50% 40% 40%;
+  height: 100%;
+  /* TODO: Select grid-area as shown in the example */
+}
+
+.blush.left {
+  /* TODO: Select the grid-area as shown in the example
+  and adjust the position.
+   */
+}
+
+.blush.right {
+  /* TODO: Select the grid-area as shown in the example
+  and adjust the position.
+   */
+}
