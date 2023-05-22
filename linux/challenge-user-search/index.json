@@ -1,49 +1,45 @@
 {
-    "type": "challenge",
-    "title": "User Search",
-    "description": "Write a script to search a user present in your system.",
-    "difficulty": "Intermediate",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "User Search",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Checking the feasibility of solutions offered by users",
-                        "file": "verify1.sh",
-                        "hint": "Please replace this text with the hint of the verify script",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "linux/df"
-                ],
-                "solutions": [
-                    "userSearch.sh"
-                ]
-            }
+  "type": "challenge",
+  "title": "User Search",
+  "description": "Write a script to search a user present in your system.",
+  "difficulty": "Intermediate",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "User Search",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Checking the feasibility of solutions offered by users",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
-        },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "userSearch.sh",
-                    "target": "~/project",
-                    "chmod": "777"
-                }
-            ]
-        }
+        "skills": ["linux/df"],
+        "solutions": ["userSearch.sh"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
     },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "userSearch.sh",
+          "target": "~/project",
+          "chmod": "777"
+        }
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
 }
