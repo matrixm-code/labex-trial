@@ -1,0 +1,134 @@
+{
+    "type": "challenge",
+    "title": "Running Pod with DaemonSets",
+    "description": "In this challenge, you learned how to use a DaemonSet in Kubernetes to run replicas of a pod on every node in the cluster.",
+    "difficulty": "Beginner",
+    "time": 25,
+    "details": {
+        "steps": [
+            {
+                "title": "Create a Pod",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if Pod called myapp-pod exists",
+                        "file": "verify1.sh",
+                        "hint": "Please create a Pod called myapp-pod",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "kubernetes/apply",
+                    "kubernetes/get"
+                ],
+                "solutions": [
+                    "step1-solution.md"
+                ]
+            },
+            {
+                "title": "Create a DaemonSet",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Check if DaemonSet called myapp-daemonset exists",
+                        "file": "verify2.sh",
+                        "hint": "Please create a DaemonSet called myapp-daemonset",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "kubernetes/apply",
+                    "kubernetes/get"
+                ],
+                "solutions": [
+                    "step2-solution.md"
+                ]
+            },
+            {
+                "title": "Verify the DaemonSet",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "List the nodes in the cluster",
+                        "file": "verify3-1.sh",
+                        "hint": "Please use 'kubectl get' command",
+                        "timeout": 0,
+                        "showstderr": false
+                    },
+                    {
+                        "name": "List the pods created by the DaemonSet",
+                        "file": "verify3-2.sh",
+                        "hint": "Please use 'kubectl get' command",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "kubernetes/get"
+                ],
+                "solutions": [
+                    "step3-solution.md"
+                ]
+            },
+            {
+                "title": "Update the DaemonSet",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Update the DaemonSet to change the image",
+                        "file": "verify4.sh",
+                        "hint": "Please update the DaemonSet to change the busybox image",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "kubernetes/apply",
+                    "kubernetes/get"
+                ],
+                "solutions": [
+                    "step4-solution.md"
+                ]
+            },
+            {
+                "title": "Verify the Update",
+                "text": "step5.md",
+                "verify": [
+                    {
+                        "name": "Verify that the DaemonSet has been updated",
+                        "file": "verify5.sh",
+                        "hint": "Please use 'kubectl describe' command",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "kubernetes/get"
+                ],
+                "solutions": [
+                    "step5-solution.md"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-instance-ubuntu:2204"
+    }
+}
