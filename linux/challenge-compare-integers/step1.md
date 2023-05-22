@@ -26,5 +26,5 @@ Write a script to compare larger integer values from a `n` number of arguments u
 
 ```bash
 labex:project/ $ bash compareIntegers.sh 1 4 2 3
-Largest number in n-integer value is:   4
+Largest number in n-integer value is: 4
 ```
