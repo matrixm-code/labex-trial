@@ -24,8 +24,8 @@ Read a `n` and display the names of any file-system which have less than `n%` fr
 labex:project/ $ bash freeSpace.sh
 [INPUT] Enter the usage [INPUT]
 12
-file system "/dev/mapper/docker-252:3-1311728-cf1bc296802376b110e1ac0a19ed3ad263fc81be8ff146ddfbd4acc246b61682"  has "62%" of freespace and used space of 38%
-file system "/dev/vda3"  has "54%" of freespace and used space of 46%
+file system "/dev/mapper/docker-252:3-1311728-cf1bc296802376b110e1ac0a19ed3ad263fc81be8ff146ddfbd4acc246b61682" has "62%" of freespace and used space of 38%
+file system "/dev/vda3" has "54%" of freespace and used space of 46%
 ```
 
 ```bash
