@@ -27,7 +27,7 @@ Write a script to perform arithmetic operation on digits of a given number depen
 labex:project/ $ bash arithematicOnOperator.sh
 [INPUT]Enter the String[INPUT]
 125+
-[OUTPUT]Result after performing "+" is  "8"[OUTPUT]
+[OUTPUT]Result after performing "+" is "8"[OUTPUT]
 ```
 
 ```bash
