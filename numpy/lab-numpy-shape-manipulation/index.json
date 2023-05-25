@@ -1,0 +1,97 @@
+{
+  "type": "lab",
+  "title": "NumPy Shape Manipulation",
+  "description": "In this lab, you will cover the NumPy shape manipulation functions that allow you to manipulate the shape of NumPy arrays.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Reshaping Arrays",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open the Python shell",
+            "file": "verify1-1.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if import NumPy",
+            "file": "verify1-2.sh",
+            "hint": "You need to import NumPy to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Please practice the reshape function",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/reshape", "numpy/array", "python/print"]
+      },
+      {
+        "title": "Concatenating and Splitting Arrays",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Please practice the np.concatenate function",
+            "file": "verify2-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Please practice the np.stack function",
+            "file": "verify2-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Please practice the np.split function",
+            "file": "verify2-3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "numpy/concatenate",
+          "numpy/stack",
+          "numpy/split",
+          "numpy/array",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Transposing Arrays",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Please practice the transpose function",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/transpose", "numpy/array", "python/print"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

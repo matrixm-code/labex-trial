@@ -1,0 +1,106 @@
+{
+  "type": "challenge",
+  "title": "NumPy List Value Statistics",
+  "description": "In this challenge, you will create a Python program using the NumPy library to perform various statistical operations on a list of values.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Mean and Median",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing mean_median.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/mean",
+          "numpy/median",
+          "python/tuple",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["mean_median.py"]
+      },
+      {
+        "title": "Standard Deviation",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing standard_deviation.py",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/std",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["standard_deviation.py"]
+      },
+      {
+        "title": "Correlation Coefficient",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing correlation_coefficient.py",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/corrcoef",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["correlation_coefficient.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "mean_median.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "standard_deviation.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "correlation_coefficient.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

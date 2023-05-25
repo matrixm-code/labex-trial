@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Second Smallest",
+  "description": "In this challenge, you will be given an array of numbers. You have to find the second smallest number in the array using Walrus Operator",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Second Smallest",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of the function second_smallest",
+            "file": "verify1.sh",
+            "hint": "Check if you have used the Walrus Operator",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/walrus"],
+        "solutions": ["solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "second_smallest.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

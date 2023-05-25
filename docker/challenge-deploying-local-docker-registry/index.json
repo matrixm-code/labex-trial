@@ -1,0 +1,123 @@
+{
+  "type": "challenge",
+  "title": "Deploying Local Docker Registry",
+  "description": "In this challenge, you will learn how to set up a local Docker registry, push an image to the registry, and pull an image from the registry.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Setting up a Docker Registry",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if image called registry exists",
+            "file": "verify1-1.sh",
+            "hint": "Please use 'docker pull' command to pull the registry image",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if directory called dockerregistry exists",
+            "file": "verify1-2.sh",
+            "hint": "Please create a directory called dockerregistry in /home/labex path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if my-registry container exists",
+            "file": "verify1-3.sh",
+            "hint": "Please run a container called my-registry with the registry image, and map port",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the repository is available",
+            "file": "verify1-4.sh",
+            "hint": "Please use 'curl' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/pull", "docker/run"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Pushing an Image to the Docker Registry",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if image called hello-world exists",
+            "file": "verify2-1.sh",
+            "hint": "Please ues 'docker pull' command to pull the image from Docker Hub",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Create a new tag for the hello-world image using our registry",
+            "file": "verify2-2.sh",
+            "hint": "Please use 'docker tag' command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Push the hello-world image to our registry",
+            "file": "verify2-3.sh",
+            "hint": "Please use 'docker push' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/pull", "docker/tag", "docker/push"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Pulling an Image from the Docker Registry",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Deleted the image",
+            "file": "verify3-1.sh",
+            "hint": "Please use 'docker rmi' command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Pull the image from our registry",
+            "file": "verify3-2.sh",
+            "hint": "Please use 'docker pull' command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Run a container with the image",
+            "file": "verify3-3.sh",
+            "hint": "Please use 'docker run' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/rmi", "docker/pull", "docker/run"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

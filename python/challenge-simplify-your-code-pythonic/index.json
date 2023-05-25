@@ -1,0 +1,134 @@
+{
+  "type": "challenge",
+  "title": "Simplify Your Code Pythonic",
+  "description": "Writing Pythonic code has many advantages",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Sum Integers",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of sum_n",
+            "file": "verify1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/sum", "python/generator_expression"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "Concatenate Strings",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implement of concat_strings",
+            "file": "verify2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/manipulating_strings"],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Get Grade",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implement of get_grade",
+            "file": "verify3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/dict", "python/next"],
+        "solutions": ["solution-step3.md"]
+      },
+      {
+        "title": "Sum Two Lists",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implement of sum_two_lists",
+            "file": "verify4.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/zip", "python/list_comprehension"],
+        "solutions": ["solution-step4.md"]
+      },
+      {
+        "title": "Flatten List",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the implement of flatten_list",
+            "file": "verify5.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list_comprehension",
+          "python/function_basic",
+          "python/data_types"
+        ],
+        "solutions": ["solution-step5.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "concat_strings.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "flatten_list.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "get_grade.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "sum_n.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "sum_two_lists.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

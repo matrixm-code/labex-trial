@@ -1,0 +1,82 @@
+{
+  "type": "challenge",
+  "title": "Reverse Iterator",
+  "description": "In this challenge,you will create an iterator and a reverse iterator in Python.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Python Iterator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing myiterator.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/iterator",
+          "python/if_else",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["myiterator.py"]
+      },
+      {
+        "title": "Python Reverse Iterator",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing reverseiterator.py",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/iterator",
+          "python/if_else",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/len"
+        ],
+        "solutions": ["reverseiterator.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "myiterator.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "reverseiterator.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

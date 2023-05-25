@@ -1,0 +1,89 @@
+{
+  "type": "challenge",
+  "title": "File Operate Like A Boss",
+  "description": "File Operate Like A Boss",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Create What You Want",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of folder_create",
+            "file": "verify1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/os", "python/if_else"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "File Travel",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implement of file_move",
+            "file": "verify2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/os", "python/if_else"],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Count and Clean All",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implement of folder_delete",
+            "file": "verify3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/os", "python/len", "python/if_else"],
+        "solutions": ["solution-step3.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "file_move.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "folder_create.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "folder_delete.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

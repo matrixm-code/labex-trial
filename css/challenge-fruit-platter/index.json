@@ -1,0 +1,107 @@
+{
+  "type": "challenge",
+  "title": "Fruit Platter",
+  "description": "The Flex layout, now new in CSS3, has become the preferred solution for front-end page layouts. ",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Fruit Platter",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the Chrome driver",
+            "file": "verify0.sh",
+            "hint": "Downloading Chrome driver now.If the download is unsuccessful, you can copy and run the following command in a terminal: cd /tmp && npm i puppeteer@20.1.2`",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether port 8080 exists",
+            "file": "verify1-1.sh",
+            "hint": "Please click Go Live.",
+            "timeout": 2,
+            "showstderr": false
+          },
+          {
+            "name": "Check Layout similarity",
+            "file": "verify1-2.sh",
+            "hint": "Failed challenge.",
+            "timeout": 30,
+            "showstderr": true
+          }
+        ],
+        "skills": ["css/flex_direction", "css/flex_wrap"],
+        "solutions": ["style.css"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_fruit_platter.js",
+          "target": "/tmp"
+        },
+        {
+          "file": "fruitTarget.png",
+          "target": "/tmp"
+        },
+        {
+          "file": "index.html",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "apple.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "pear.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "banana.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "blueplate.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "redplate.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "yellowplate.svg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": ".puppeteerrc.cjs",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "lqid": 2448
+}

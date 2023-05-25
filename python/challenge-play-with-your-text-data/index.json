@@ -1,0 +1,139 @@
+{
+  "type": "challenge",
+  "title": "Play With Your Text Data",
+  "description": "Play With Your Text Data",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Word Total Count",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the word count is correct",
+            "file": "verify1.sh",
+            "hint": "Word count print is not correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/open", "python/len"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "High-Frequency Words",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check top 1st word",
+            "file": "verify2-1.sh",
+            "hint": "The top 1st word count is not correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check top 2nd word",
+            "file": "verify2-2.sh",
+            "hint": "The top 2 word count is not correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check top 3rd word",
+            "file": "verify2-3.sh",
+            "hint": "The top 3rd word count is not correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sorted", "python/dict"],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Words Line Up in Order",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check words line up in order",
+            "file": "verify3.sh",
+            "hint": "Words line up not in order",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/rw_files",
+          "python/manipulating_strings",
+          "python/python_scripts"
+        ],
+        "solutions": ["solution-step3.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "verify3.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "centos",
+          "target": "/home/labex/project/files",
+          "chmod": "777"
+        },
+        {
+          "file": "java",
+          "target": "/home/labex/project/files",
+          "chmod": "777"
+        },
+        {
+          "file": "linux",
+          "target": "/home/labex/project/files",
+          "chmod": "777"
+        },
+        {
+          "file": "program",
+          "target": "/home/labex/project/files",
+          "chmod": "777"
+        },
+        {
+          "file": "python",
+          "target": "/home/labex/project/files",
+          "chmod": "777"
+        },
+        {
+          "file": "ubuntu",
+          "target": "/home/labex/project/files",
+          "chmod": "777"
+        },
+        {
+          "file": "top_3_high_frequencies.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "word_count.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "step3_code.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

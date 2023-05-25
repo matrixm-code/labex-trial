@@ -1,0 +1,90 @@
+{
+    "type": "challenge",
+    "title": "Deploying Jenkins Application",
+    "description": "In this challenge, you will learn how to deploy a Jenkins application with Docker.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Install Docker Compose",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if the docker-compose is installed",
+                        "file": "verify1.sh",
+                        "hint": "Please install docker-compose",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "docker/build",
+                    "docker/images"
+                ],
+                "solutions": [
+                    "step1-solution.md"
+                ]
+            },
+            {
+                "title": "Build a Docker Image for Jenkins",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Check if the jenkins-docker image exists",
+                        "file": "verify2.sh",
+                        "hint": "Please use 'docker build' command to create a image called jenkins-docker",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "docker/build",
+                    "docker/images"
+                ],
+                "solutions": [
+                    "step2-solution.md"
+                ]
+            },
+            {
+                "title": "Run Jenkins in a Docker Container using Docker Compose",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Check if the jenkins is running",
+                        "file": "verify3.sh",
+                        "hint": "Please use 'docker-compose up' command and check the YML file is correct",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "docker/build",
+                    "docker/images",
+                    "docker/ps"
+                ],
+                "solutions": [
+                    "step3-solution.md"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-instance-ubuntu:2204"
+    }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "lab",
+  "title": "Testing Your Code",
+  "description": "In this lab, we will learn how to write unit tests for our Python code using the built-in unittest module. We will start with a simple function and then build up to testing more complex code, including code that interacts with databases.Before starting this lab, you should have a basic understanding of Python programming language.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Add Number",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if this step is completed",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/unittest", "python/class", "python/function_basic"]
+      },
+      {
+        "title": "Testing Exceptions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if this step is completed",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/unittest", "python/class", "python/function_basic"]
+      },
+      {
+        "title": "Testing with Databases",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if this step is completed",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/unittest",
+          "python/class",
+          "python/function_basic",
+          "python/sqlite3"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

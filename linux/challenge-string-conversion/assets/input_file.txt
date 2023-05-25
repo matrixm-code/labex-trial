@@ -1,0 +1,3 @@
+this prOgram takes an iNput_file As an input
+and conVerts the string iNto upper_case
+and loWer_case

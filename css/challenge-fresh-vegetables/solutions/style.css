@@ -1,0 +1,29 @@
+/* TODO: Add your CSS code here */
+#box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#box2 .item:nth-child(2) {
+    align-self: flex-end;
+}
+
+#box3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#box3 .item:nth-child(2) {
+    align-self: center;
+}
+
+#box3 .item:nth-child(3) {
+    align-self: flex-end;
+}

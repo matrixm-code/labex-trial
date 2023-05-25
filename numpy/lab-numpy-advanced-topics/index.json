@@ -1,0 +1,112 @@
+{
+  "type": "lab",
+  "title": "NumPy Advanced Topics",
+  "description": "This lab will cover some of the advanced features of NumPy, including linear algebra, random number generation, and masked arrays.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Linear Algebra with NumPy",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open the Python shell",
+            "file": "verify0-0.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether dot is entered.",
+            "file": "verify1-0.sh",
+            "hint": "You need to enter dot to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether it has been entered Matmul and @.",
+            "file": "verify1-1.sh",
+            "hint": "You need to enter Matmul and @ to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether it has been entered linalg.det and linalg.inv.",
+            "file": "verify1-2.sh",
+            "hint": "You need to enter linalg.det and inalg.inv to continue.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/array", "numpy/dot", "numpy/linalg"]
+      },
+      {
+        "title": "Random Number Generation",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check whether random.rand is entered.",
+            "file": "verify2-0.sh",
+            "hint": "You need to enter random.rand to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether random.randint is entered.",
+            "file": "verify2-1.sh",
+            "hint": "You need to enter random.randint to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether random.normal is entered.",
+            "file": "verify2-2.sh",
+            "hint": "You need to enter random.normal to continue.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/random"]
+      },
+      {
+        "title": "Masked Arrays",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check whether a Masked Array is created.",
+            "file": "verify3-0.sh",
+            "hint": "You need to create a Masked Array to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether a Mask is applied.",
+            "file": "verify3-1.sh",
+            "hint": "You need to apply for a Mask before continuing.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether invalid values are masked.",
+            "file": "verify3-2.sh",
+            "hint": "You need to mask invalid values before continuing.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/ma"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

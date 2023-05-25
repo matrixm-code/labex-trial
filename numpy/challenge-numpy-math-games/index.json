@@ -1,0 +1,160 @@
+{
+  "type": "challenge",
+  "title": "NumPy Math Games",
+  "description": "In this challenge will help you to understand how to use the `NumPy` module in Python and how to work with NumPy arrays",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Elementwise Multiplication",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing multiply_arrays.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "numpy/multiply",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["multiply_arrays.py"]
+      },
+      {
+        "title": "Matrix Multiplication",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing matrix_multiply.py",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "numpy/matmul",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["matrix_multiply.py"]
+      },
+      {
+        "title": "Transpose",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing transpose_array.py",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "numpy/transpose",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["transpose_array.py"]
+      },
+      {
+        "title": "Reshape",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing reshape_array.py",
+            "file": "verify4.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "numpy/reshape",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["reshape_array.py"]
+      },
+      {
+        "title": "Euclidean Distance",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Testing euclidean_distance.py",
+            "file": "verify5.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "numpy/sum",
+          "numpy/sqrt",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["euclidean_distance.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "multiply_arrays.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "matrix_multiply.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "transpose_array.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "reshape_array.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "euclidean_distance.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
